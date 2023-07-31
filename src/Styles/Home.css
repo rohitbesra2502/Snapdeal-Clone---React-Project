@@ -1,0 +1,196 @@
+.home{
+    margin: 20px auto;
+    /* width: 100%; */
+    border: 0;
+    /* border: 1px solid blue; */
+}
+
+
+/* ====================================================================================
+ ============================  product carousel =======================================
+ =======================================================================================*/
+.trendingContainer{
+    background-color: #fff;
+    padding: 10px 0;
+}
+.trendingproductTitle{
+    margin-top: 20px;
+    margin-left: 50px;
+}
+.trending-card-wrapper{
+    margin-left: 40px;
+    margin-top: 15px;
+    width: 200px;
+    height: 300px;
+    padding: 10px;
+    /* border:1px solid red; */
+}
+.trending-product-img img{
+    background-color: white;
+    margin-left: 20px;
+    width: 150px;
+    height: 160px;
+    margin-bottom: 10px;
+    /* border: 1px solid blue; */
+}
+.trending-title{
+    font-size: 12px;
+    height: 30px;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    color: darkgrey;
+    /* border: 1px solid blue; */
+}
+
+.trending-product_rating{
+    /* text-align: center; */
+    /* display: flex; */
+    padding: auto;
+    margin: 10px 0 0 20px;
+    /* border: 1px solid red; */
+}
+.trending-price{
+    color: black;
+    font-weight: 600;
+    margin-left: 25px;
+    /* border: 1px solid red; */
+    background-color: #FFFFFF;
+}
+
+/* =========================================================================== */
+/* footer */
+.social_payment_footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px 20px;
+    /* padding: 15px 30px; */
+    /* border: 1px solid black; */
+}
+.footerCards{
+    /* width: 50%; */
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid red; */
+}
+.socialIcons{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    /* border: 1px solid blue; */
+}
+.payment{
+    font-size: 19px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.connect{
+    margin-bottom: 5px;
+    font-size: 22px;
+    /* border: 1px solid darkgreen; */
+}
+.socialIconsLinks{
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    /* border: 1px solid red; */
+}
+.footerDescription{
+    font-size: 15px;
+    font-weight: 100;
+    padding: 15px 30px;
+}
+.bottomFooter{
+    background-color: #F7F7F7;
+    font-size: 15px;
+    padding: 15px 30px;
+}
+@media screen and (max-width: 480px) {
+    .trending-card-wrapper{
+        position: relative;
+        margin: auto;
+        padding: 10px;
+        /* border:1px solid red; */
+        
+    }
+    .trending-card{
+        /* width: 120px; */
+        width: fit-content;
+        height: 280px;
+        padding: 10px;
+        margin: 0 ;
+        box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.19);
+        /* border: 1px solid #A3a3a3; */
+    }
+    .social_payment_footer{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .connect{
+        margin: 0;
+        padding-left: 30px;
+        margin-bottom: 5px;
+        /* border: 1px solid darkgreen; */
+    }
+    .socialIconsLinks{
+        margin:0;
+        padding-left: 40px;
+        /* border: 1px solid darkgreen; */
+    }
+        
+}
+@media screen and (max-Width: 800px) {
+    /* footer */
+    .social_payment_footer{
+        padding: 5px 0 0 0;
+    }
+    .footerCards{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        /* border: 1px solid red; */
+    }
+    .socialIcons{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        /* border: 1px solid blue; */
+    }
+    .footerCardsImg{
+        width: 100%;
+    }
+    .payment{
+        font-size: 16px;
+        margin-top: 10px;
+        margin-left: 20px;
+    }
+    .connect{
+        margin-top: 11px;
+        font-size: 15px;
+        font-weight: 500;
+        /* border: 1px solid darkgreen; */
+    }
+    .socialIconsLinks{
+        width: 50%;
+        margin-bottom: 10px;
+        padding: 5px;
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+        /* border: 1px solid red; */
+    }
+
+}
