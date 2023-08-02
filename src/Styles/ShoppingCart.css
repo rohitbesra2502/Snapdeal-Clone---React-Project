@@ -1,11 +1,9 @@
 .shopping__cart{
     position: relative;
-    margin: auto;
+    margin: 150px auto;
     width: 1160px;
-    margin-top: 20px;
     height: 100%;
     background-color: #fff;
-    /* border: 1px solid #60BF79; */
 }
 .cartMainHeading{
     font-size: 20px;
@@ -32,7 +30,6 @@
     justify-content: space-between;
     justify-items: center;
     align-items:center;
-    /* border: 1px solid #60BF79; */
 }
 
 .shoppingcartTitle{
@@ -54,7 +51,6 @@
     border-radius: 10px;
     color: #5a5a59;
     margin-top: -40px;
-    /* border: 1px solid red; */
 }
 .shoppingcartPrice , .shoppingcartSubtotal{
     margin-top: -40px;
@@ -102,71 +98,4 @@
 }
 .cartSubTotal {
     margin-bottom: 8px;
-}
-
-@media screen and (min-width:639px) and (max-width : 1162px){
-    .shopping__cart{
-        position: relative;
-        margin: auto;
-        width: 600px;
-        margin-top: 20px;
-        height: 100%;
-        background-color: #fff;
-        /* border: 1px solid #60BF79; */
-    }
-    
-    .cartFooter{
-        max-width: 100%;
-        max-height: 100px;
-        padding: 20px;
-    }
-       
-}
-@media screen and (min-width:480px) and (max-width : 638px){
-    .shopping__cart{
-        position: relative;
-        margin: auto;
-        width: 500px;
-        margin-top: 20px;
-        height: 100%;
-        background-color: #fff;
-        /* border: 1px solid #60BF79; */
-    }
-    .cartMainHeading{
-        font-size: 16px;
-        padding: 15px 10px;
-    }
-    .cartTitles{
-        font-size: 14px;
-        padding: 10px 10px;
-    }
-    .shoppingProduct{
-        padding: 5px;
-        display: flex;
-        justify-content: space-between;
-        justify-items: center;
-        align-items:center;
-        /* border: 1px solid #60BF79; */
-    }
-    
-    .shoppingcartTitle{
-        width: 300px;
-    }
-    .selectQuantity{
-        padding: 5px 10px;
-    }
-    .cartSubTotal{
-        margin-top: 10px;
-        /* border: 1px solid red; */
-    }
-    .cartFooter{
-        font-size: 10px;
-        max-width: 100%;
-        max-height: 50px;
-        padding: 20px;
-    }
-    .cartPayBtn{
-        margin: 20px;
-        font-size: 11px;
-    }
 }

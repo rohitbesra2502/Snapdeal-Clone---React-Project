@@ -1,27 +1,15 @@
 import React from "react";
 import Carousel from "react-multi-carousel";
-import ProductsCarousel from "./ProductsCarousel";
+import ProductsCarousel from "./ProductsCarousel.jsx";
 import "react-multi-carousel/lib/styles.css";
 
 import { useProductContext } from "../context/productcontex";
 
 const responsive = {
     superLargeDesktop:{
-        breakpoint: {max:4000 , min :1024},
-        items:7,
+        breakpoint: {max:4000 , min :320},
+        items:6,
         slidesToSlide : 5,
-    },
-    desktop:{
-        breakpoint:{max:1024 , min:768},
-        items:4,
-    },
-    tablet:{
-        breakpoint:{max:768 , min:480},
-        items:3,
-    },
-    mobile:{
-        breakpoint:{max:480 , min:320},
-        items:2,
     },
 }
 

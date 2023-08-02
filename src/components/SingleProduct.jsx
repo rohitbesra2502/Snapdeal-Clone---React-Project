@@ -59,13 +59,6 @@ const SingleProduct = () => {
                         <button className='addToCartBtn' onClick={() => addItem(singleProduct)}>ADD TO CART</button>
                         <button className='buyBtn' onClick={() => navigate('/payment')}>BUY NOW</button>
                     </div>
-                    <div className='singlepage_delivery'>
-                        <p>Delivery</p>
-                        <div className='searching_pincode'>
-                            <input className='pincode_input' type='email' placeholder='Enter your email id'/>
-                            <button className='pincode_search_btn'>CHECK</button>
-                        </div>
-                    </div>
                     <div className='singlepage_description'>
                         <p> <b className='description_bold'>7 Days Easy Returns</b> Trustpay: 100% Payment Protection. Return or Replacement is applicable for 7 days after delivery Know More </p>
                     </div>

@@ -14,7 +14,7 @@
   /* Customize the size and other styles as needed */
   width: 310px;
   max-width: 90%; /* Ensure it doesn't exceed the viewport */
-  height: 400px;
+  height: 300px; /*change the height of modal*/
   background-color: white;
   padding: 20px;
   border-radius: 4px;

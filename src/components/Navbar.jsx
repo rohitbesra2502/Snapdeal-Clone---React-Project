@@ -6,6 +6,7 @@ import {useState } from "react";
 import { useUserAuth } from "../context/UserAuthContext";
 import { Link } from "react-router-dom";
 import LoginModal from "./LoginModal";
+import searchImg from "../assets/searchImg.webp";
 
 const Navbar = (props) => {
   const [search , setSearch] = useState('');
@@ -42,9 +43,11 @@ const Navbar = (props) => {
       <>
         <div className="NavBar">
           <NavLink to="/" className="logo">Snapdeal</NavLink>
-          <div className="searchBar">
+          <div className="search__wrapper">
             <input className="searchInput" onChange={(e) => setSearch(e.target.value)} value={search}  placeholder="Search product & brands"/>
-            <button className="searchBtn" onClick = {handleSearchClick}>Search</button>
+            <button className="searchBtn" onClick = {handleSearchClick}>
+              <img className="searchImg" src={searchImg} />
+            </button>
           </div>
           <div className="cart_signin_wrapper">
               <NavLink to="/shoppingcart">
@@ -58,8 +61,8 @@ const Navbar = (props) => {
                 {user ? (
                   <>
                     <button className="logInBtn" onClick={handleLogout}>LOGOUT</button>
-                      <img className="userLogo navIcon" src={userImg} alt="user-icon" />
-                    <h5>{ user && `Welcome ${user.displayName}`}</h5>
+                    <img className="userLogo navIcon" src={userImg} alt="user-icon" />
+                    <h5 className="userName">{ user && `Welcome ${user.displayName}`}</h5>
                   </>
                 ) : (
                   <>
@@ -70,6 +73,7 @@ const Navbar = (props) => {
               </div>
           </div>
         </div>
+
         {/* Render the LoginModal component */}
         <LoginModal isModalOpen={isModalOpen} openModal={openModal} closeModal={closeModal} openLoginModal={openLoginModal} />
       </>
