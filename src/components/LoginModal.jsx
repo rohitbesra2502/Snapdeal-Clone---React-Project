@@ -16,23 +16,23 @@ const LoginModal = ({ isModalOpen, openModal, closeModal }) => {
     const navigate = useNavigate();
     const [isSignUpModalOpen, setSignUpModalOpen] = useState(false);
     
-    // const handleLoginClick = () => {
-    //     signInWithPopup(auth,provider)
-    //     .then((result) => {
-    //         console.log("RESULT" , result);
-    //         const userName = result.user.displayName;
-    //         closeModal();
-    //         navigate('/',{
-    //             state:{
-    //                 userName,
-    //             }
-    //         });
-    //     })
-    //     .catch((error) => {
-    //         console.log("ERROR",error);
-    //     });
-    //   console.log("Login btn clicked");
-    // }
+    const handleLoginClick = () => {
+        signInWithPopup(auth,provider)
+        .then((result) => {
+            console.log("RESULT" , result);
+            const userName = result.user.displayName;
+            closeModal();
+            navigate('/',{
+                state:{
+                    userName,
+                }
+            });
+        })
+        .catch((error) => {
+            console.log("ERROR",error);
+        });
+      console.log("Login btn clicked");
+    }
     const handleSubmit = async (e) => {
         e.preventDefault();
         setError("");
@@ -65,12 +65,6 @@ const LoginModal = ({ isModalOpen, openModal, closeModal }) => {
             ariaHideApp ={false}
             overlayClassName="custom-modal-overlay"
         >
-        {/* <Login/> */}
-        {/* Add your login form here */}
-        {/* For example:
-        <form>
-            ...
-        </form> */}
             <div className="input-wrapper">
                 <div className="input-modal">
                     <div className='login-heading-box'>
@@ -83,11 +77,11 @@ const LoginModal = ({ isModalOpen, openModal, closeModal }) => {
                         <input placeholder='Email' className='signin-input-email' type='text'onChange={(e)=>setEmail(e.target.value)}/>
                         <input placeholder='Password' className='signin-input-password' type='password'onChange={(e)=>setPassword(e.target.value)}/>
                         <button className='continue-btn'>CONTINUE</button>
-                        {/* <p className='commonTextGrey'>or login using</p> */}
-                        {/* <div className='google-box' onClick={handleLoginClick}>
+                        <p className='commonTextGrey'>or login using</p>
+                        <div className='google-box' onClick={handleLoginClick}>
                             <img  className="gLogo"src={gLogo}></img>
                             <h4 className='gName'>Google</h4>
-                        </div> */}
+                        </div>
                         <div className='signUpBox'>
                             <h4 className='signUpLink'> Don't have an account?<p style={{color : "blue" , cursor : 'pointer'}} onClick={openSignUpModal}>Sign up</p></h4>
                         </div>

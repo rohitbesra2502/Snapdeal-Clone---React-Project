@@ -9,11 +9,8 @@ import ErrorPage from './components/ErrorPage';
 import {auth} from "./firebase/firebase.js"
 import SingleProduct from './components/SingleProduct';
 import PaymentModal from './components/PaymentModal';
-// import LogOnSnapdeal from './user/LogOnSnapdeal.jsx';
 import { UserAuthContextProvider } from './context/UserAuthContext';
 import PaymentStatus from './components/PaymentStatus';
-// import LogOut from "../src/user/LogOut.jsx";
-// import ProtectedRoute from './components/ProtectedRoute';
 import ShoppingCart from './components/ShoppingCart';
 
 function App() {
@@ -47,8 +44,8 @@ function App() {
                 <Route path='/singleproduct/:id' element={<SingleProduct/>}/>
                 <Route path='/singleproduct' element={<SingleProduct/>}/>
                 <Route path='/payment' element={<PaymentModal/>}/>
+                <Route path='payment-status' element={<PaymentStatus/>}/>
                 <Route path='*' element={<ErrorPage/>}/>
-                <Route path='paymentstatus' element={<PaymentStatus/>}/>
               </Routes>
           </BrowserRouter> 
         </CartProvider>

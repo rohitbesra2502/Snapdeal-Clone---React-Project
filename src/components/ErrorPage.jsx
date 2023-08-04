@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom'
 
 const ErrorPage = () => {
   return (
-    <div>
+    <div style={{marginTop:'200px' , display: 'flex' , flexDirection:'column' ,justifyContent:'center' , justifyItems:'center' , alignItems:'center'}}>
         <h2>404</h2>
         <h3>UH OH You're lost.</h3>
         <p>

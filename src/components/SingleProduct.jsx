@@ -48,11 +48,11 @@ const SingleProduct = () => {
                     <div className='size_container'>
                         <p>Size</p>
                         <div className='size_btns'>
-                            <button className='size_btn'>S</button>
-                            <button className='size_btn'>M</button>
-                            <button className='size_btn'>L</button>
-                            <button className='size_btn'>XL</button>
-                            <button className='size_btn'>2XL</button>
+                            <button className='size_btn' style={{color : "#000"}}>S</button>
+                            <button className='size_btn' style={{textDecoration: 'line-through' , color:'#000'}}>M</button>
+                            <button className='size_btn' style={{textDecoration: 'line-through' , color:'#000'}}>L</button>
+                            <button className='size_btn' style={{textDecoration: 'line-through' , color:'#000'}}>XL</button>
+                            <button className='size_btn' style={{textDecoration: 'line-through' , color:'#000'}}>2XL</button>
                         </div>
                     </div>
                     <div className='ProductBtn'>

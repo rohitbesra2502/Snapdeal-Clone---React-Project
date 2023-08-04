@@ -2,17 +2,21 @@ import React,{useState} from 'react'
 import '../Styles/PaymentModal.css'
 import image from "../img/card_img.png";
 import { useLocation, useNavigate } from 'react-router-dom';
-import { Navigate } from 'react-router-dom';
+import { useUserAuth } from '../context/UserAuthContext';
 
 const PaymentModal = () => {
+    const { user } = useUserAuth();
     const location = useLocation();
     const queryParams = new URLSearchParams(location.search);
     const totalPrice = queryParams.get("total");
-
-    const navigate = useNavigate();
+   const navigate = useNavigate();
     const handleSubmit = (e) => {
       e.preventDefault();
-      navigate('/paymentstatus');
+      if (!user) {
+        alert('Please log in before making a payment.');
+        } else {
+        navigate('/payment-status');
+      }
     }
     return (
         <div className='payment_wrapper'>
