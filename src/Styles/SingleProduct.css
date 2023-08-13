@@ -1,0 +1,129 @@
+.singlepage_wrapper{
+    width: 1160px;
+    margin: 120px auto;
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid red; */
+}
+/* ---------------------------------- */
+/* single-page product img  */
+.singlepage_img{
+    background-color: #fff;
+    width: 500px;
+    /* border: 1px solid red; */
+}
+.singlepage_main_img{
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+    /* width: 300px; */
+    /* height: 400px; */
+    /* margin: 0 50px; */
+    cursor: pointer;
+    /* border: 1px solid blue; */
+}
+
+
+
+/* ---------------------------------- */
+/* single-page product details */
+.singlepage_details{
+    margin: 1px;
+    padding: 40px;
+    background-color: #fff;
+    /* border: 1px solid blue; */
+}
+.singlepage_title{
+    padding: 5px;
+    font-size: 22px;
+    /* border: 1px solid red; */
+}
+.singlepage_rating{
+    padding: 20px;
+    display: flex;
+    gap: 15px;
+    /* border: 1px solid red; */
+}
+.page_rating{
+    /* border: 1px solid red; */
+}
+.rating_points{
+    margin-top: 5px;
+    font-size: 14px;
+    color: #a6a6a6;
+    font-weight: bold;
+}
+.singlepage_price{
+    font-size: 23px;
+    padding: 5px;
+    color: red;
+    margin-bottom: 90px;
+    /* border: 1px solid red; */
+}
+.color_container{
+    padding: 15px;
+    display: flex;
+    gap: 70px;
+    font-size: 14px;
+    /* border: 1px solid blue; */
+}
+.color_img{
+    margin-top: 2px;
+    max-width: 70px;
+    max-height: 90px;
+    padding: 5px;
+    /* margin: 5px; */
+    border: 1px solid #03c988;
+    cursor: pointer;
+}
+.size_container{
+    margin-top: 2px;
+    padding: 15px;
+    display: flex;
+    gap: 70px;
+    font-size: 14px;
+    /* border: 1px solid darkgreen; */
+}
+.size_btn{
+    padding: 10px;
+    margin-left: 15px;
+    border: 1px solid #a6a6a6;
+    background-color: #fff;
+    color: #a6a6a6;
+    cursor: pointer;
+}
+
+.ProductBtn{
+    padding: 15px 20px;
+    margin-left: 100px;
+}
+
+.addToCartBtn , .buyBtn{
+    font-size: 16px;
+    padding: 12px 40px;
+    border: none;
+    color: #fff;
+    font-weight: 400;
+    cursor: pointer;
+}
+.addToCartBtn{
+    background-color: #333333;
+}
+.addToCartBtn:hover{
+    background-color: #000;
+}
+.buyBtn:hover{
+    background-color: green;
+    margin-left: 20px;
+}
+.buyBtn{
+    background-color: #03c988;
+    margin-left: 20px;
+}
+
+.singlepage_description{
+    font-weight: 300;
+    padding: 15px;
+    font-size: 14px;
+    color: #a6a6a6;
+}

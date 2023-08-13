@@ -1,0 +1,143 @@
+/* Home.css */
+
+/* Common Styles */
+.home__container {
+    /* padding: 10px; */
+    margin: 100px auto;
+    width: 1160px;
+    /* border: 1px solid red; */
+  }
+  
+  /* Image Slider Styles (No Changes for Responsiveness) */
+  
+  /* Trending Product Carousel Styles */
+  .trendingContainer {
+    background-color: #fff;
+    padding: 10px 0;
+    margin-top: 20px;
+    /* border: 1px solid red; */
+  }
+  
+  .trendingproductTitle {
+    font-size: 16px;
+    margin: 0 10px;
+  }
+  
+  .trending-card-wrapper {
+    /* width: 150px; */
+    height: 370px;
+    /* width: 100%; */
+    padding: 0 70px;
+    /* padding: 5px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+    /* border: 1px solid blue; */
+}
+
+.trending-product-img img {
+    width: 150px;
+    height: 200px;
+    margin-bottom: 10px;
+    /* border: 1px solid red; */
+  }
+  
+  .trending-title {
+    font-size: 12px;
+    height: 40px;
+    overflow: hidden;
+    color: darkgrey;
+  }
+  
+  .trending-product_rating {
+    margin: 10px 0;
+  }
+  
+  .trending-price {
+    color: black;
+    font-weight: 600;
+    background-color: #FFFFFF;
+  }
+  
+  /* Footer Styles */
+  .footer__wrapper {
+    background-color: #fff;
+    padding: 15px 0;
+  }
+  
+  .social_payment_footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .footerCards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .socialIcons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .payment {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  .connect {
+    font-size: 18px;
+  }
+  
+  .socialIconsLinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 5px;
+  }
+  
+  .footerDescription {
+    font-size: 14px;
+    color: #000;
+    padding: 10px 20px;
+  }
+  
+  .bottomFooter {
+    background-color: #F7F7F7;
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media screen and (min-width: 768px) {
+    .trendingproductTitle {
+      font-size: 24px;
+    }
+    
+    .trending-card-wrapper {
+      width: calc(25% - 20px);
+      margin: 0 10px;
+    }
+    
+    .trending-title {
+      font-size: 14px;
+      height: auto;
+    }
+    
+    .footerCards, .socialIcons {
+      flex-direction: row;
+      justify-content: center;
+    }
+    
+    .footerDescription, .bottomFooter {
+      padding: 10px 40px;
+    }
+  }
+  
